@@ -7,7 +7,7 @@ Availavle on [Chrome Store](https://chrome.google.com/webstore/detail/kuku-kube-
 
 ## Demo
 * Autoplay  
-![autoplay](https://github.com/DerayGa/kuku-kube-challenger/blob/master/autoplay.gif) :metal:
+![autoplay](https://github.com/DerayGa/kuku-kube-challenger/blob/master/autoplay.gif)
 
 * Hint  
 ![hint](https://github.com/DerayGa/kuku-kube-challenger/blob/master/hint.gif)
