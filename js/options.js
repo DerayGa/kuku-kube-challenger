@@ -9,7 +9,8 @@ const restoreOptions = () => {
   chrome.storage.sync.get({
     setting: []
   }, (items) => {
-    const setting = items.setting;
+    const setting = Object.assign({ autoPlay: false, interval: 500}, items.setting);
+
     $('#autoPlay').prop('checked', setting.autoPlay);
     $('#interval').val(setting.interval);
   });

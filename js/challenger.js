@@ -1,7 +1,5 @@
-let setting = {
-  autoPlay: true,
-  interval: 500,
-};
+let setting;
+
 const shake = (obj) => {
   const interval = 100;
   const distance = 10;
@@ -48,8 +46,7 @@ $(document).ready(() => {
   chrome.storage.sync.get({
     setting: []
   }, (items) => {
-    Object.assign(setting, items.setting);
-
+    setting = Object.assign({ autoPlay: false, interval: 500}, items.setting);
     $('button.play-btn').on('click', findTarget);
 
     $('div#box').on('click', () => {
